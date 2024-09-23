@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import NavBar from "../app/components/common/header"
+import HeroSection from "./components/Hero/heroSection";
+import QuoteForm from "./components/Hero/quote";
+import Carosol from "./components/Hero/cardCarosal";
 
-const page = () => {
+
+const Home: React.FC = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      <NavBar/>
+      <HeroSection/>
+      <QuoteForm/>
+      <Carosol/>
+     
+    </div>
+  );
+};
 
-export default page
+export default Home;

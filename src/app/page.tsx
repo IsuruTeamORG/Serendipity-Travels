@@ -4,8 +4,6 @@ import NavBar from "../app/components/common/header"
 import HeroSection from "./components/Hero/heroSection";
 import QuoteForm from "./components/Hero/quote";
 import Carosol from "./components/Hero/cardCarosal";
-
-import React from 'react'
 import Gallery from '../app/components/gallery'
 import { TourCardDetails } from './components/details/TourCardDetails'
 import TourCard from './components/TourCard'
@@ -18,7 +16,6 @@ const Home: React.FC = () => {
       <HeroSection/>
       <QuoteForm/>
       <Carosol/>
-     
       <Gallery/>
       <div>
       <div className='mx-[5%] p-4'>

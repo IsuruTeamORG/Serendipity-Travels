@@ -44,7 +44,7 @@ const DestinationCarousel: React.FC<DestinationCarouselProps> = ({
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 ">
       <h2
         className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair ml-20"
         style={{ fontFamily: "Playfair Display" }}
@@ -53,7 +53,7 @@ const DestinationCarousel: React.FC<DestinationCarouselProps> = ({
       </h2>
 
       <div className="relative">
-        <div className="flex space-x-4 justify-center  ">
+        <div className="flex space-x-[4%] justify-center  ">
           {destinations
             .slice(startIndex, startIndex + 4)
             .map((destination, index) => (
@@ -62,7 +62,7 @@ const DestinationCarousel: React.FC<DestinationCarouselProps> = ({
         </div>
         <button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
+          className="absolute left-0 top-1/2  transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"
         >
           <ChevronLeftIcon size={24} />
         </button>

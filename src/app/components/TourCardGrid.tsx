@@ -8,7 +8,7 @@ const TourCardGrid: React.FC = () => {
 
      
       <div>
-        <div className="mx-[5%] p-4">
+        <div className="container mx-auto">
           <div className="font-bold max-md:py-0 ">
             <h2  className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair"
         style={{ fontFamily: "Playfair Display" }}>Best Package For 2024</h2>

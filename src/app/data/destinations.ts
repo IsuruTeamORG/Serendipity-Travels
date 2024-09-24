@@ -1,5 +1,6 @@
 import anuradhapura from "../../../public/Destinations/Anuradhapura.png";
 import sigiriya from "../../../public/Destinations/Seegiriya.png";
+
 import ella from "../../../public/Destinations/Ella.png"; 
 import Sigiriya from "../../../public/Destinations/Seegiriya.png"
 import Galle from "../../../public/Destinations/Galle.png"
@@ -19,12 +20,14 @@ export interface MoreDestination {
 }
 
 export const destinations: Destination[] = [
+  { name: "Anuradhapura", image: anuradhapura },
+  { name: "Sigiriya", image: sigiriya },
+  { name: "Ella", image: ella },
+
   { name: "Anuradhapura", image: anuradhapura }, 
   { name: "Sigiriya", image: sigiriya },
   { name: "Ella", image: ella },
-  { name: "Anuradhapura", image: anuradhapura }, 
-  { name: "Sigiriya", image: sigiriya },
-  { name: "Ella", image: ella },
+
 ];
 
 export const moreDestinations: MoreDestination[] = [

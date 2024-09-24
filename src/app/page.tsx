@@ -5,10 +5,14 @@ import HeroSection from "./components/Hero/heroSection";
 import QuoteForm from "./components/Hero/quote";
 import Carosol from "./components/Hero/cardCarosal";
 import Gallery from "../app/components/gallery";
-import TourCardGrid from "./components/TourCardGrid";
-import Footer from "./components/common/footer";
-import GoogleReviewPage from "./components/Hero/googleCarosal";
 
+
+
+import TourCardGrid from "./components/TourCardGrid"
+import MoreDestinationCarosal from "./components/MoreDestinationCarosal"
+import GoogleReviewCarousel from "./components/GoogleReviewCarosal";
+
+import Banner from "./components/Banner";
 
 
 const Home: React.FC = () => {
@@ -19,9 +23,16 @@ const Home: React.FC = () => {
       <QuoteForm />
       <Carosol />
       <Gallery />
-      <TourCardGrid />
-      <GoogleReviewPage/>
-      <Footer/>
+
+ 
+      <TourCardGrid/>
+      <Banner/>
+      <MoreDestinationCarosal/>
+      <GoogleReviewCarousel/>
+     
+
+    
+
     </div>
   );
 };

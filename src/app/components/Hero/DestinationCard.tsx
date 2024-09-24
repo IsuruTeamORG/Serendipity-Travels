@@ -46,14 +46,14 @@ const DestinationCarousel: React.FC<DestinationCarouselProps> = ({
   return (
     <div className="container mx-auto px-4">
       <h2
-        className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair"
+        className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair ml-20"
         style={{ fontFamily: "Playfair Display" }}
       >
         Top Destinations in Sri Lanka
       </h2>
 
       <div className="relative">
-        <div className="flex space-x-4 overflow-hidden">
+        <div className="flex space-x-4 justify-center  ">
           {destinations
             .slice(startIndex, startIndex + 4)
             .map((destination, index) => (

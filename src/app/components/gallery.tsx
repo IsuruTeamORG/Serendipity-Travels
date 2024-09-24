@@ -9,7 +9,7 @@ import img6 from "../../../public/Gallery/Rectangle 20.svg";
 
 const PhotoGallery: React.FC = () => {
   return (
-    <div className=" mx-[15%]  p-4">
+    <div className=" container mx-auto ">
       <div  className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair"
         style={{ fontFamily: "Playfair Display" }}>Gallery</div>
 

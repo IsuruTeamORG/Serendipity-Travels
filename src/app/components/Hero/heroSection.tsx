@@ -47,15 +47,17 @@ const HeroSection: React.FC = () => {
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col justify-center items-start px-10 md:px-20 text-white space-y-6 z-10">
-        <p className="text-base md:text-2xl font-bold">
+        <p className="text-left text-base font-bold leading-tight md:text-2xl md:leading-7">
           We are waiting for you
         </p>
-        <h1 className="text-4xl leading-tight md:text-7xl lg:text-8xl font-bold">
+
+        <h1 className="text-left text-4xl leading-snug md:text-7xl md:leading-tight lg:text-8xl lg:leading-[90px] font-bold tracking-[0.05em]">
           Welcome To Sri
         </h1>
-        <h1 className="text-4xl leading-tight md:text-7xl lg:text-8xl font-bold">
+        <h1 className="text-left text-4xl leading-snug md:text-7xl md:leading-tight lg:text-8xl lg:leading-[90px] font-bold tracking-[0.05em]">
           Lanka
         </h1>
+
         <div className="flex flex-col">
           <Link
             href="/visit-sri-lanka"

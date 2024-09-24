@@ -13,6 +13,7 @@ import MoreDestinationCarosal from "./components/MoreDestinationCarosal"
 import GoogleReviewCarousel from "./components/GoogleReviewCarosal";
 
 import Banner from "./components/Banner";
+import Footer from "./components/common/footer";
 
 
 const Home: React.FC = () => {
@@ -29,6 +30,7 @@ const Home: React.FC = () => {
       <Banner/>
       <MoreDestinationCarosal/>
       <GoogleReviewCarousel/>
+      <Footer/>
      
 
     

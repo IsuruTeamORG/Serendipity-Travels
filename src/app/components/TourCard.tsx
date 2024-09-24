@@ -14,7 +14,7 @@ interface TourCardProps {
 
 const TourCard: React.FC<TourCardProps> = ({data}) => {
   return (
-    <div className="relative w-64 rounded-lg overflow-hidden shadow-lg">
+    <div className="relative w-[300px] rounded-lg overflow-hidden shadow-lg">
       <Image src={data.image} alt={data.title} className="w-[300px] h-[402px] object-cover" />
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
         <div className="flex items-center mb-2">

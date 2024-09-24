@@ -1,9 +1,9 @@
-import img1 from "../../../../public/Image (3).png";
-import img2 from "../../../../public/Image (3).png";
-import img3 from "../../../../public/Image (3).png";
-import img4 from "../../../../public/Image (3).png";
-import img5 from "../../../../public/Image (3).png";
-import img6 from "../../../../public/Image (3).png";
+import img1 from "../../../public/PackagesImg/Rectangle 13 (1).png";
+import img2 from "../../../public/PackagesImg/Rectangle 13 (2).png";
+import img3 from "../../../public/PackagesImg/Rectangle 13 (3).png";
+import img4 from "../../../public/PackagesImg/Rectangle 13 (4).png";
+import img5 from "../../../public/PackagesImg/Rectangle 13 (5).png";
+import img6 from "../../../public/PackagesImg/Rectangle 13 (6).png";
 
 
 export const TourCardDetails = [

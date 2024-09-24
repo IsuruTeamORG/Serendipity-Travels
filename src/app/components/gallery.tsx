@@ -9,7 +9,7 @@ import img6 from "../../../public/Gallery/Rectangle 20.svg";
 
 const PhotoGallery: React.FC = () => {
   return (
-    <div className=" mx-[15%]  p-4">
+    <div className="container mx-auto  p-4">
       <div  className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair"
         style={{ fontFamily: "Playfair Display" }}>Gallery</div>
 
@@ -18,16 +18,16 @@ const PhotoGallery: React.FC = () => {
           <Image
             src={img1}
             alt="Img01"
-            className="transition-transform duration-300 hover:scale-105 object-cover h-[670px] w-[405px]"
+            className="transition-transform duration-300 hover:scale-105 object-cover w-full h-full"
           />
         </div>
 
-        <div className="grid gap-0 items-start ">
-          <div className="relative overflow-hidden rounded-lg">
+        <div className="grid gap-1 items-start ">
+          <div className="relative overflow-hidden rounded-lg ">
             <Image
               src={img2}
               alt="Img02"
-              className="transition-transform object-cover duration-300 hover:scale-105 h-[217px] w-[405px]"
+              className="transition-transform object-cover duration-300 hover:scale-105 w-full h-full"
             />
           </div>
 
@@ -35,7 +35,7 @@ const PhotoGallery: React.FC = () => {
             <Image
               src={img6}
               alt="Img06"
-              className="transition-transform object-cover duration-300 hover:scale-105 h-[207px] w-[405px] overflow-hidden rounded-lg"
+              className="transition-transform object-cover duration-300 hover:scale-105 w-full h-full overflow-hidden rounded-lg"
             />
           </div>
 
@@ -43,17 +43,17 @@ const PhotoGallery: React.FC = () => {
             <Image
               src={img4}
               alt="Img04"
-              className="transition-transform object-cover duration-300 hover:scale-105 h-[207px] w-[405px]"
+              className="transition-transform object-cover duration-300 hover:scale-105 w-full h-full"
             />
           </div>
         </div>
 
         <div className="grid justify-end gap-1">
-          <div className="overflow-hidden rounded-lg  ">
+          <div className="overflow-hidden rounded-lg   ">
             <Image
               src={img3}
               alt="Img03"
-              className="transition-transform object-cover duration-300 hover:scale-105 h-[342px] w-[462px] "
+              className="transition-transform object-cover duration-300 hover:scale-105 w-full h-full "
             />
           </div>
 
@@ -61,7 +61,7 @@ const PhotoGallery: React.FC = () => {
             <Image
               src={img5}
               alt="Img05"
-              className="transition-transform object-cover duration-300 hover:scale-105  h-[342px] w-[462px]"
+              className="transition-transform object-cover duration-300 hover:scale-105  h-full w-full"
             />
           </div>
         </div>

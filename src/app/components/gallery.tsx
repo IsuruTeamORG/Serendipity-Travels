@@ -24,7 +24,7 @@ const PhotoGallery: React.FC = () => {
        <div>
           <Link href="/Designation">
             <button className="w-auto px-4 h-10 ml-[5%] rounded bg-gray-500 max-xl:mt-[5%]">
-              <span className="text-white">SaleOffer Page</span>
+              <span className="text-white">Designation</span>
             </button>
           </Link>
         </div>

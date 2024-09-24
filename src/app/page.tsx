@@ -5,6 +5,10 @@ import QuoteForm from "./components/Hero/quote";
 import Carosol from "./components/Hero/cardCarosal";
 import Gallery from "../app/components/gallery";
 import TourCardGrid from "./components/TourCardGrid"
+import MoreDestinationCarosal from "./components/MoreDestinationCarosal"
+import GoogleReviewCarousel from "./components/GoogleReviewCarosal";
+
+import Banner from "./components/Banner";
 
 const Home: React.FC = () => {
   return (
@@ -16,6 +20,10 @@ const Home: React.FC = () => {
       <Carosol />
       <Gallery />
       <TourCardGrid/>
+      <Banner/>
+      <MoreDestinationCarosal/>
+      <GoogleReviewCarousel/>
+     
 
     
     </div>

@@ -7,6 +7,8 @@ import img4 from "../../../public/Gallery/Rectangle 18.svg";
 import img5 from "../../../public/Gallery/Rectangle 19.svg";
 import img6 from "../../../public/Gallery/Rectangle 20.svg";
 
+import Link from "next/link";
+
 const PhotoGallery: React.FC = () => {
   return (
 
@@ -14,8 +16,18 @@ const PhotoGallery: React.FC = () => {
 
     <div className="container mx-auto  p-4">
 
+
+
       <div  className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair"
         style={{ fontFamily: "Playfair Display" }}>Gallery</div>
+
+       <div>
+          <Link href="/Designation">
+            <button className="w-auto px-4 h-10 ml-[5%] rounded bg-gray-500 max-xl:mt-[5%]">
+              <span className="text-white">SaleOffer Page</span>
+            </button>
+          </Link>
+        </div>
 
       <div className="grid grid-cols-3 gap-1 mt-10 ">
         <div className="grid relative overflow-hidden justify-end">

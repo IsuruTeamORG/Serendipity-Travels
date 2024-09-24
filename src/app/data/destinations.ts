@@ -31,7 +31,7 @@ export const destinations: Destination[] = [
 ];
 
 export const moreDestinations: MoreDestination[] = [
-  { name: "seegiriya", image: Sigiriya }, 
+  { name: "sigiriya", image: Sigiriya }, 
   { name: "Galle", image: Galle },
   { name: "Kandy", image:Kandy },
   { name: "Polonnaruwa", image: Polonnaruwa },

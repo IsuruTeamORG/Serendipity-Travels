@@ -13,7 +13,7 @@ const GoogleReviewCard: React.FC<GoogleReviewCardProps> = ({
   googleReview,
 }) => (
   <>
-    <div className="w-[300px] h-[216px] bg-[#F5F5F5] hover:bg-[#dddddd] duration-300 rounded-lg overflow-hidden shadow-lg">
+    <div className="w-[343px] h-[260px] bg-[#F5F5F5] hover:bg-[#dddddd] duration-300 rounded-lg overflow-hidden shadow-lg">
       <div className="p-4 gap-5">
         <div className="flex items-center mb-2">
           <div className="w-10 h-10 rounded-full overflow-hidden mr-3">

@@ -13,7 +13,7 @@ const DestinationCard: React.FC<DestinationCardProps> = ({ moreDestinations }) =
 <div className="flex items-center justify-center ">
   <div className="grid grid-cols-1 gap-5 ">
     <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl rounded-lg">
-      <div className="h-[242px] w-[242px]">
+      <div className="h-[280px] w-[280px]">
         <Image className="h-full w-full object-cover transition-transform duration-500  group-hover:scale-110" src={moreDestinations.image} alt={moreDestinations.name} />
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent group-hover:from-black/70 group-hover:via-black/60"></div>

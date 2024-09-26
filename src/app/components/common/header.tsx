@@ -1,6 +1,7 @@
 import Image from "next/image";
 import LOGO from "../../../../public/Logo.png";
 
+
 const Header = () => {
   return (
     <header className="absolute top-0 w-full z-10">

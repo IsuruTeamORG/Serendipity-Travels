@@ -1,6 +1,6 @@
 import anuradhapura from "../../../public/Destinations/Anuradhapura.png";
 import sigiriya from "../../../public/Destinations/Seegiriya.png";
-
+import AnuradhapuraCoverImg from "../../../public/Destinations/AnuradhapuraCoverImg.png"
 import ella from "../../../public/Destinations/Ella.png";
 import Sigiriya from "../../../public/Destinations/Seegiriya.png";
 import Galle from "../../../public/Destinations/Galle.png";
@@ -13,6 +13,10 @@ export interface Destination {
   id: number;
   name: string;
   image: StaticImageData;
+  province:string;
+  established:string;
+  coverImg:StaticImageData;
+
 }
 
 export interface MoreDestination {
@@ -21,13 +25,13 @@ export interface MoreDestination {
 }
 
 export const destinations: Destination[] = [
-  { id: 1, name: "Anuradhapura", image: anuradhapura },
-  { id: 2, name: "Sigiriya", image: sigiriya },
-  { id: 3, name: "Ella", image: ella },
+  { id: 1, name: "Anuradhapura", province:"North Central Province", established:"5th century BC",image: anuradhapura , coverImg: AnuradhapuraCoverImg },
+  { id: 2, name: "Sigiriya", province:"North Central Province", established:"5th century BC",image: sigiriya , coverImg: AnuradhapuraCoverImg },
+  { id: 3, name: "Ella", province:"North Central Province", established:"5th century BC",image: ella , coverImg: AnuradhapuraCoverImg },
 
-  { id: 4, name: "Anuradhapura", image: anuradhapura },
-  { id: 5, name: "Sigiriya", image: sigiriya },
-  { id: 6, name: "Ella", image: ella },
+  { id: 4, name: "Anuradhapura", province:"North Central Province", established:"5th century BC",image: anuradhapura , coverImg: AnuradhapuraCoverImg },
+  { id: 5, name: "Sigiriya", province:"North Central Province", established:"5th century BC",image: sigiriya , coverImg: AnuradhapuraCoverImg },
+  { id: 6, name: "Ella" ,province:"North Central Province", established:"5th century BC", image: ella , coverImg: AnuradhapuraCoverImg },
 ];
 
 export const moreDestinations: MoreDestination[] = [

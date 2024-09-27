@@ -15,10 +15,10 @@ const QuoteForm = () => {
   };
 
   return (
-    <div className="bg-white w-full flex justify-center ">
+    <div className="flex justify-center ">
       <form
         onSubmit={handleSubmit}
-        className="bg-white w-[50%] h-[100px] rounded-lg shadow-md p-4 flex items-center space-x-4 justify-center  relative mt-[-2%]"
+        className=" relative bg-white w-[50%] h-[100px] rounded-lg shadow-md p-4 flex items-center space-x-4 justify-center   mt-[-2%]"
       >
         <div className="relative">
           <select

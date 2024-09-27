@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useParams } from "next/navigation";
-import { destinations, Destination } from "../../data/destinations";
+import { destinations } from "../../data/destinations";
 import Image from "next/image";
 import NavBar from "../../components/common/header";
 import Footer from "../../components/common/footer";
@@ -53,7 +53,6 @@ const DestinationView: React.FC<DestinationViewProps> = () => {
           </p>
         </div>
 
-        {/* <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black to-transparent" /> */}
         <div className="mt-[-15%]">
           <QuoteForm />
         </div>
@@ -124,15 +123,4 @@ const DestinationView: React.FC<DestinationViewProps> = () => {
 
 export default DestinationView;
 
-{
-  /* <div className="relative py-[40%] ">
-<div className="absolute left-[26%] top-[-15%] z-20 " ><Image src={BackgroundImg1} alt="BackgroundImg" className="object-cover w-[690px] h-[406px]"/></div>
-<div className="absolute left-[20%] top-[30%] z-30 " ><Image src={BackgroundImg2} alt="BackgroundImg" className="object-cover w-[406px] h-[502px]"/></div>
-<div className="absolute right-[20%] top-[30%] z-10 " ><Image src={BackgroundImg3} alt="BackgroundImg" className="object-cover w-[484px] h-[674px]"/></div>
-<div className="absolute left-[40%] top-[10%]">
-<Image src={BackgroundImg} alt="BackgroundImg" className="object-cover w-[1106px] h-[474px] "/>
-</div>
-</div>
-</div>
-<div className="mt-[45%]"><Footer /></div> */
-}
+

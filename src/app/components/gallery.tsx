@@ -16,11 +16,11 @@ const PhotoGallery: React.FC = () => {
 
 
 
-      <div  className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair"
+      <div  className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair max-md:text-xl max-md:mb-0"
         style={{ fontFamily: "Playfair Display" }}>Gallery</div>
 
 
-      <div className="grid grid-cols-3 gap-1 mt-10 ">
+      <div className="grid grid-cols-3 gap-1 mt-10 max-md:mt-4">
         <div className="grid relative overflow-hidden justify-end">
           <Image
             src={img1}

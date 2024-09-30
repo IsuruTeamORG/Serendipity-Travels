@@ -23,12 +23,12 @@ const TourCardGrid: React.FC = () => {
   const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 max-md:py-2">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-4xl font-bold leading-tight text-left text-[#004643] mb-8 font-playfair"
+        className="text-4xl font-bold leading-tight text-left text-[#004643] mb-8 max-md:mb-4 font-playfair max-md:text-xl"
       >
         Best Package For 2024
       </motion.h2>
@@ -37,7 +37,7 @@ const TourCardGrid: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+        className="grid grid-cols-4 max-lg:grid-cols-2 max-xl:grid-cols-3 gap-2"
       >
         {currentItems.map((product: any) => (
           <motion.div

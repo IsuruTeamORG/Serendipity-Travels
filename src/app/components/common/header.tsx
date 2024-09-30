@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import LOGO from "../../../../public/Logo.png";
 
 
@@ -8,18 +9,20 @@ const Header = () => {
       <div className=" mx-[5%] px-4 ">
         <div className="flex justify-between items-center py-6">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Image
-              src={LOGO}
-              alt="Logo"
-              width={80}
-              height={80}
-              className="h-20 w-auto"
-            />
-          </div>
+          <Link href="/">
+            <div className="flex-shrink-0">
+              <Image
+                src={LOGO}
+                alt="Logo"
+                width={80}
+                height={80}
+                className="h-20 w-auto"
+              />
+            </div>
+          </Link>
           {/* Navigation */}
           <nav className="hidden md:flex space-x-10 text-white">
-            <a href="#" className="hover:text-gray-400">
+            <a href="/" className="hover:text-gray-400">
               Home
             </a>
             <a href="#" className="hover:text-gray-400">

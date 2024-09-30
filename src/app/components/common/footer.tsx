@@ -5,6 +5,7 @@ import FooterShape from "../../../../public/rectShape.png";
 import FooterBImage from "../../../../public/FooterBImage.jpg";
 import Vector from "../../../../public/Vector.svg";
 import Image from "next/image";
+import Link from "next/link";
 import ContactForm from "../ContactForm";
 
 const Footer = () => {
@@ -12,7 +13,11 @@ const Footer = () => {
     <footer className="bg-[#333333]  py-8 mt-[10%]">
       <div className="relative container mx-auto flex flex-col items-center text-black">
         {/* FooterShape Image */}
-        <Image src={FooterShape} alt="Footer shape" className="w-full mt-[-3%]" />
+        <Image
+          src={FooterShape}
+          alt="Footer shape"
+          className="w-full mt-[-3%]"
+        />
 
         {/* FooterBImage positioned absolutely on top of FooterShape */}
         <div className="absolute inset-0 flex justify-center items-center">
@@ -56,14 +61,16 @@ const Footer = () => {
       </div>
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Logo */}
-        <div className="mb-4 md:mb-0">
-         <Image
-            src={LOGO}
-            alt="Serendipity Travels Logo"
-            width={80}
-            height={80}
-          /> 
-        </div>
+        <Link href="/">
+          <div className="mb-4 md:mb-0">
+            <Image
+              src={LOGO}
+              alt="Serendipity Travels Logo"
+              width={80}
+              height={80}
+            />
+          </div>
+        </Link>
 
         {/* Social Media Icons */}
         <div className="flex space-x-4 mb-4 md:mb-0 text-white">

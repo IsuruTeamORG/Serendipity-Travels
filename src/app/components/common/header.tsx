@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import LOGO from "../../../../public/Logo.png";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
@@ -33,6 +34,7 @@ const Header = () => {
               href="#"
               className="hover:text-gray-400 transition-all duration-300"
             >
+
               Home
             </a>
             <a

@@ -11,9 +11,9 @@ type DestinationCardProps = {
 
 const DestinationCard: React.FC<DestinationCardProps> = ({ moreDestinations }) => (
 <div className="flex items-center justify-center ">
-  <div className="grid grid-cols-1 gap-5 ">
+  <div className="grid grid-cols-1  gap-5 ">
     <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl rounded-lg">
-      <div className="h-[280px] w-[280px]">
+      <div className="h-[280px] w-[280px] max-md:w-[250px] max-md:h-[200px]">
         <Image className="h-full w-full object-cover transition-transform duration-500  group-hover:scale-110" src={moreDestinations.image} alt={moreDestinations.name} />
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent group-hover:from-black/70 group-hover:via-black/60"></div>
@@ -51,20 +51,29 @@ const DestinationCarousel: React.FC<DestinationCarouselProps> = ({
   return (
     <div className="container mx-auto px-4">
       <h2
-        className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair"
+        className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair max-md:text-xl"
         style={{ fontFamily: "Playfair Display" }}
       >
        Explore More Destinations
       </h2>
 
       <div className="relative">
-      <div className="flex space-x-4 justify-center  ">
+      <div className="flex space-x-4 justify-center max-md:hidden ">
           {moreDestinations
             .slice(startIndex, startIndex + 5)
             .map((moreDestinations, index) => (
               <DestinationCard key={index} moreDestinations={moreDestinations} />
             ))}
         </div>
+{/* mobile view */}
+        <div className="flex space-x-4 justify-center md:hidden ">
+          {moreDestinations
+            .slice(startIndex, startIndex + 1)
+            .map((moreDestinations, index) => (
+              <DestinationCard key={index} moreDestinations={moreDestinations} />
+            ))}
+        </div>
+
         <button
           onClick={prevSlide}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"

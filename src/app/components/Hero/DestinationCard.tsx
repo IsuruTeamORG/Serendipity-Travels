@@ -14,7 +14,7 @@ const DestinationCard: React.FC<DestinationCardProps> = ({ destination }) => {
 
   return (
     <div 
-      className="relative w-64 h-80 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
+      className="relative w-64 h-80 max-md:w-[250px] max-md:h-[200px] rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
       onClick={() => router.push(`/DestinationData/${destination.id}`)}
     >
       <Image
@@ -54,20 +54,33 @@ const DestinationCarousel: React.FC<DestinationCarouselProps> = ({
   return (
     <div className="container mx-auto px-4">
       <h2
-        className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair "
+
+
+        className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair ml-20 max-md:text-xl max-md:ml-0 max-md:mt-[3%]"
+
         style={{ fontFamily: "Playfair Display" }}
       >
         Top Destinations in Sri Lanka
       </h2>
 
       <div className="relative">
-        <div className="flex space-x-[4%] justify-center">
+        <div className="flex space-x-[4%] justify-center max-md:hidden">
           {destinations
             .slice(startIndex, startIndex + 4)
             .map((destination, index) => (
               <DestinationCard key={destination.id} destination={destination} />
             ))}
         </div>
+
+        {/* mobile view */}
+        <div className="flex space-x-[4%] justify-center md:hidden">
+          {destinations
+            .slice(startIndex, startIndex + 1)
+            .map((destination, index) => (
+              <DestinationCard key={destination.id} destination={destination} />
+            ))}
+        </div>
+
         <button
           onClick={prevSlide}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md"

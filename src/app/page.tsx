@@ -2,7 +2,7 @@ import React from "react";
 
 import NavBar from "./components/common/header";
 import HeroSection from "./components/Hero/heroSection";
-import QuoteForm from "./components/Hero/quote";
+
 import Carosol from "./components/Hero/cardCarosal";
 import Gallery from "../app/components/gallery";
 
@@ -21,7 +21,6 @@ const Home: React.FC = () => {
     <div>
       <NavBar />
       <HeroSection />
-      <QuoteForm />
       <Carosol />
       <Gallery />
 

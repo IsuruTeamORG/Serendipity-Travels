@@ -1,8 +1,8 @@
 "use client";
-import { div } from "framer-motion/client";
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ContactForm: React.FC = () => {
+  const [rows, setRows] = useState(1); // Default to 1 row
   const [formData, setFormData] = useState({
     name: "",
     country: "",
@@ -16,6 +16,31 @@ const ContactForm: React.FC = () => {
     gender: "",
     message: "",
   });
+   useEffect(() => {
+     const updateRows = () => {
+       const width = window.innerWidth;
+       if (width >= 1024) {
+         // Large screens (lg)
+         setRows(6);
+       } else if (width >= 768) {
+         // Medium screens (md)
+         setRows(4);
+       } else {
+         // Small screens (sm)
+         setRows(1);
+       }
+     };
+
+     // Set initial rows based on window size
+     updateRows();
+
+     // Listen for window resize
+     window.addEventListener("resize", updateRows);
+     return () => {
+       window.removeEventListener("resize", updateRows);
+     };
+   }, []);
+
 
   const validate = () => {
     let newErrors = { name: "", country: "", gender: "", message: "" };
@@ -72,10 +97,10 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8 p-6">
+    <div className="max-w-full lg:max-w-md mx-auto mt-8 p-6">
       <form
         onSubmit={handleSubmit}
-        className="w-[460px] h-[560px] mx-auto mt-8 p-6 bg-white rounded-lg shadow-md space-y-5"
+        className="w-full sm:w-[90%] lg:w-[460px] h-auto lg:h-[560px] mx-auto mt-8 p-6 bg-white rounded-lg shadow-md space-y-5"
       >
         <div className="mb-4">
           <input
@@ -123,7 +148,7 @@ const ContactForm: React.FC = () => {
             <p className="text-red-500 text-sm">{errors.gender}</p>
           )}
         </div>
-        <div className="mb-4 ">
+        <div className="mb-4">
           <textarea
             name="message"
             placeholder="Message"
@@ -132,28 +157,37 @@ const ContactForm: React.FC = () => {
             className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
               errors.message ? "border-red-500" : "border-gray-300"
             } resize-none`}
-            rows={6}
+            rows={rows} // Set rows based on state
             required
           ></textarea>
           {errors.message && (
             <p className="text-red-500 text-sm">{errors.message}</p>
           )}
         </div>
+
         <div className="pt-14">
           <button
             type="submit"
-            className="w-[35%] bg-blue-500 text-white py-5 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="w-full sm:w-auto bg-blue-500 text-white py-3 px-6 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
           >
             Submit
           </button>
         </div>
       </form>
-      <p className="mt-4 text-sm text-gray-600">
-        I have read and accept the{" "}
-        <a href="#" className="text-blue-500 hover:underline">
-          privacy policy
-        </a>
-      </p>
+      <div className="mt-4 text-sm text-gray-600 text-center">
+        <label className="flex items-center justify-center space-x-2">
+          <input
+            type="checkbox"
+            className="form-checkbox h-4 w-4 text-blue-500"
+          />
+          <span>
+            I have read and accept the{" "}
+            <a href="#" className="text-blue-500 hover:underline">
+              privacy policy
+            </a>
+          </span>
+        </label>
+      </div>
     </div>
   );
 };

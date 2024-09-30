@@ -54,7 +54,10 @@ const DestinationCarousel: React.FC<DestinationCarouselProps> = ({
   return (
     <div className="container mx-auto px-4">
       <h2
+
+
         className="text-4xl font-bold leading-[63.98px] text-left text-[#004643] mb-4 font-playfair ml-20 max-md:text-xl max-md:ml-0 max-md:mt-[3%]"
+
         style={{ fontFamily: "Playfair Display" }}
       >
         Top Destinations in Sri Lanka

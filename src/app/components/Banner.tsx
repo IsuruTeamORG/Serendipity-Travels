@@ -25,7 +25,7 @@ const Banner: React.FC = () => {
           </button>
 
           <button className="w-[174px] h-[60px] max-md:w-[100px] max-md:h-[50px] border-2 border-[#FF6F61] border-opacity-50 rounded-lg font-inter text-base text-white hover:border-[#ec5a4d] max-md:text-sm">
-            Contact us
+            Contact uss
           </button>
         </div>
       </div>
